@@ -83,7 +83,7 @@ p { margin: 0 0 1em; }
 /* ---------- En-tête ---------- */
 .entete {
   position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.96);
-  border-bottom: 1px solid var(--bord); backdrop-filter: saturate(1.2) blur(6px);
+  border-bottom: 1px solid var(--bord); -webkit-backdrop-filter: saturate(1.2) blur(6px); backdrop-filter: saturate(1.2) blur(6px);
 }
 .entete .conteneur { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 72px; }
 .entete__logo img { height: 50px; width: auto; }
@@ -267,7 +267,7 @@ p { margin: 0 0 1em; }
 
 /* ---------- Bouton flottant (téléphone) ---------- */
 .flottant {
-  position: fixed; right: 16px; bottom: 16px; z-index: 40; display: flex; gap: 10px;
+  position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 40; display: flex; gap: 10px;
 }
 .flottant a {
   width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center;
