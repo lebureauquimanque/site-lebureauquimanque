@@ -17,7 +17,7 @@
   --bord: #E4E4E4;
   --titre: "Oswald", "Arial Narrow", Arial, sans-serif;
   --texte: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  --largeur: 1120px;
+  --largeur: 1240px;
   --rayon: 14px;
 }
 
@@ -108,8 +108,8 @@ p { margin: 0 0 1em; }
 .accueil__visuel img { border-radius: var(--rayon); box-shadow: 0 18px 40px rgba(10,10,10,.14); width: 100%; }
 .accueil__lieu { color: var(--gris); font-size: .98rem; margin-top: 10px; }
 @media (min-width: 900px) {
-  .accueil { padding: 72px 0 88px; }
-  .accueil .conteneur { grid-template-columns: 1fr 1.05fr; gap: 56px; }
+  .accueil { padding: 64px 0 80px; }
+  .accueil .conteneur { grid-template-columns: minmax(0, .9fr) minmax(0, 1.3fr); gap: 48px; }
 }
 
 /* ---------- Pour qui ---------- */
